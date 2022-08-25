@@ -17,13 +17,10 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </head>
   <body>
+
+    <script src="./script.js"></script>
       <!-- Your code goes here -->
-      <script src="script.js"></script>
-
-
-
-
-
+    
       <div class="container">
         <div class="row">
           <div class="col py-5">
@@ -44,49 +41,45 @@
         </div>
         <div class="row">
             <div class="col-12 py-3 text-center">
-
-
-                <div class="controllerWrap ">
-                    <div class="col-12 controllerButtons">
-                        <div class="row">
-                            <div class="col-12 py-2">
-                                <span class="controllerButton">
-                                    <img src="./assets/icons/Vector.svg" />
-                                </span>
-                            </div>
-                            <div class="col-6 py-2 text-start">
-                                <span class="controllerButton ms-3">
-                                    <img src="./assets/icons/akar-icons_watch-device.svg" />
-                                </span>
-                            </div>
-                            <div class="col-6 py-2 text-end">
-                                <span class="controllerButton me-3">
-                                    <img src="./assets/icons/fluent_device-eq-24-filled.svg" />
-                                </span>
-                            </div>
-                            <div class="col-6 py-2 text-start">
-                                <span class="controllerButton ms-3">
-                                    <img src="./assets/icons/flat-color-icons_about.svg" />
-                                </span>
-                            </div>
-                            <div class="col-6 py-2 text-end">
-                                <span class="controllerButton me-3">
-                                    <img src="./assets/icons/bx_bxs-contact.svg" />
-                                </span>
+                <div class="ctWrapper">
+                    <div class="controllerWrap" id="controllerWrap">
+                        <div class="col-12 controllerButtons">
+                            <div class="row">
+                                <div class="col-12 py-2">
+                                    <span class="controllerButton mt-1">
+                                        <img src="./assets/icons/Vector.svg" />
+                                    </span>
+                                </div>
+                                <div class="col-6 py-2 text-start mt-md-3">
+                                    <span class="controllerButton ms-3">
+                                        <img src="./assets/icons/akar-icons_watch-device.svg" />
+                                    </span>
+                                </div>
+                                <div class="col-6 py-2 text-end  mt-md-3">
+                                    <span class="controllerButton me-4">
+                                        <img src="./assets/icons/fluent_device-eq-24-filled.svg" />
+                                    </span>
+                                </div>
+                                <div class="col-6 py-2 text-start mt-md-4">
+                                    <span class="controllerButton ms-4">
+                                        <img src="./assets/icons/flat-color-icons_about.svg" />
+                                    </span>
+                                </div>
+                                <div class="col-6 py-2 text-end  mt-md-4">
+                                    <span class="controllerButton me-4">
+                                        <img src="./assets/icons/bx_bxs-contact.svg" />
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <span class="controllerMainButton">
+                    <span class="controllerMainButton" onclick="toggleController()">
                         <img src="./assets/icons/Union (1).svg" />
                     </span>
                 </div>
-
-
             </div>
         </div>
       </div>
-
-
 
   </body>
   </html>

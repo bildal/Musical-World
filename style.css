@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
 }
       /* Your code goes here */
 
@@ -28,11 +29,21 @@ body {
     }
 }
 
-.controllerWrap {
-    width: 200px; height: 200px; background-color: transparent;
-    margin: 0 auto; border-radius: 50%;
-    position: relative;
+.ctWrapper {
+    width: 200px;  height: 200px; position: relative; margin: 0 auto; 
 }
+.controllerWrap {
+    width: 100%; height: 200px; background-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    display: none;
+}
+.controllerWrap.open {
+    display: block;
+}
+
+
+
 .controllerButtons{
     position: relative; z-index: 2;
 }
@@ -52,15 +63,25 @@ body {
 }
 .controllerMainButton {
     background: #be274e; position: absolute; bottom: -5px; left: 50%;
-    z-index: 3; height: 60px; width: 50px; line-height: 50px; margin-left: -25px;
-    border-radius: 20px; cursor: pointer;
+    z-index: 3; height: 60px; width: 60px; line-height: 50px; margin-left: -30px;
+    border-radius: 30px; cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
     .headPhoneImage {
         max-width: 100%;
     }
+    .ctWrapper {
+        width: 250px;   height: 250px;
+    }
     .controllerWrap {
-        width: 250px; height: 250px;
+        height: 250px;
+    }
+    .controllerWrap:after {
+        border: 60px solid #be274e;
+    }
+    .controllerMainButton {
+        height: 80px; width: 80px; line-height: 80px; margin-left: -40px;
+        border-radius: 40px;
     }
 }
